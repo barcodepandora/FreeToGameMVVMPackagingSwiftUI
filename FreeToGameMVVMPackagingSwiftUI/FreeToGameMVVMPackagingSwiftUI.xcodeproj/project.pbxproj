@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		561F436E2A536B4A0036C1E7 /* Garcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561F436D2A536B4A0036C1E7 /* Garcon.swift */; };
-		561F43712A536BF50036C1E7 /* IntegracionFreeToGameAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 561F43702A536BF50036C1E7 /* IntegracionFreeToGameAlamofire */; };
+		567C439B2A537C5800C293F8 /* IntegracionFreeToGameAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 567C439A2A537C5800C293F8 /* IntegracionFreeToGameAlamofire */; };
 		56BF3AD62A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF3AD52A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUIApp.swift */; };
 		56BF3AD82A535A3E009BF8DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BF3AD72A535A3E009BF8DC /* ContentView.swift */; };
 		56BF3ADA2A535A40009BF8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56BF3AD92A535A40009BF8DC /* Assets.xcassets */; };
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		561F436C2A536ABF0036C1E7 /* IntegracionFreeToGameAlamofire */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IntegracionFreeToGameAlamofire; path = ../IntegracionFreeToGameAlamofire; sourceTree = "<group>"; };
 		561F436D2A536B4A0036C1E7 /* Garcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garcon.swift; sourceTree = "<group>"; };
 		56BF3AD22A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeToGameMVVMPackagingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BF3AD52A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeToGameMVVMPackagingSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -59,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561F43712A536BF50036C1E7 /* IntegracionFreeToGameAlamofire in Frameworks */,
+				567C439B2A537C5800C293F8 /* IntegracionFreeToGameAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +89,6 @@
 		56BF3AC92A535A3D009BF8DC = {
 			isa = PBXGroup;
 			children = (
-				561F436C2A536ABF0036C1E7 /* IntegracionFreeToGameAlamofire */,
 				56BF3AD42A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUI */,
 				56BF3AEA2A535A41009BF8DC /* FreeToGameMVVMPackagingSwiftUITests */,
 				56BF3AF42A535A41009BF8DC /* FreeToGameMVVMPackagingSwiftUIUITests */,
@@ -165,7 +163,7 @@
 			);
 			name = FreeToGameMVVMPackagingSwiftUI;
 			packageProductDependencies = (
-				561F43702A536BF50036C1E7 /* IntegracionFreeToGameAlamofire */,
+				567C439A2A537C5800C293F8 /* IntegracionFreeToGameAlamofire */,
 			);
 			productName = FreeToGameMVVMPackagingSwiftUI;
 			productReference = 56BF3AD22A535A3E009BF8DC /* FreeToGameMVVMPackagingSwiftUI.app */;
@@ -239,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 56BF3AC92A535A3D009BF8DC;
+			packageReferences = (
+				567C43992A537C5800C293F8 /* XCRemoteSwiftPackageReference "IntegracionFreeToGameAlamofire" */,
+			);
 			productRefGroup = 56BF3AD32A535A3E009BF8DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +440,7 @@
 		56BF3AFC2A535A41009BF8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +470,7 @@
 		56BF3AFD2A535A41009BF8DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,9 +614,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		567C43992A537C5800C293F8 /* XCRemoteSwiftPackageReference "IntegracionFreeToGameAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/barcodepandora/IntegracionFreeToGameAlamofire.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		561F43702A536BF50036C1E7 /* IntegracionFreeToGameAlamofire */ = {
+		567C439A2A537C5800C293F8 /* IntegracionFreeToGameAlamofire */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 567C43992A537C5800C293F8 /* XCRemoteSwiftPackageReference "IntegracionFreeToGameAlamofire" */;
 			productName = IntegracionFreeToGameAlamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

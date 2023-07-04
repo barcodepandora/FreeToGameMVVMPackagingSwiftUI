@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "integracionfreetogamealamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/barcodepandora/IntegracionFreeToGameAlamofire.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "76c777d8b943dc2a93bcdea4777dda9f7ce4959c"
+      }
+    }
+  ],
+  "version" : 2
+}
